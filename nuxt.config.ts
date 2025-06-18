@@ -16,10 +16,16 @@ export default defineNuxtConfig({
     '@nuxt/icon',
     '@nuxt/image',
     '@nuxt/ui',
+    '@vueuse/nuxt',
   ],
   eslint: {
     config: {
       standalone: false,
+    },
+  },
+  nitro: {
+    experimental: {
+      websocket: true,
     },
   },
 })
